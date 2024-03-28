@@ -14,7 +14,22 @@ def load_data_from_api(*args, **kwargs):
     """
     url = 'https://media.githubusercontent.com/media/abhirup-ghosh/e2e-data-pipeline/main/data/appearances.csv'
     
-    return pd.read_csv(url, sep=',')
+    appearance_dtype = {
+        'appearance_id': str,
+        'game_id': pd.Int64Dtype(),
+        'player_id': pd.Int64Dtype(),
+        'player_club_id': pd.Int64Dtype(),
+        'player_current_club_id': pd.Int64Dtype(),
+        'player_name': str,
+        'competition_id': str,
+        'yellow_cards': pd.Int64Dtype(),
+        'red_cards': pd.Int64Dtype(),
+        'goals': pd.Int64Dtype(),
+        'assists': pd.Int64Dtype(),
+        'minutes_played': pd.Int64Dtype()
+        }
+
+    return pd.read_csv(url, sep=',', dtype=appearance_dtype, parse_dates=['date'])
 
 
 @test

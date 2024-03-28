@@ -13,7 +13,20 @@ def load_data_from_api(*args, **kwargs):
     Template for loading data from API
     """
     url = 'https://raw.githubusercontent.com/abhirup-ghosh/e2e-data-pipeline/main/data/competitions.csv'
-    response = requests.get(url)
+
+    comp_dtype = {
+        'competition_id': str,
+        'competition_code': str,
+        'name': str,
+        'sub_type': str,
+        'type': str,
+        'country_id': pd.Int64Dtype(),
+        'country_name': str,
+        'domestic_league_code': str,
+        'confederation': str,
+        'url': str,
+        'is_major_national_league': pd.Int64Dtype()
+    }
 
     return pd.read_csv(url, sep=',')
 
