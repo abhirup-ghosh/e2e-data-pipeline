@@ -76,6 +76,8 @@
 
 * **Enable ssh with VS Code** by installing **Remote-SSH** plugin and connecting to the remote host using the above configuration file. The instructions are [here](https://youtu.be/ae-CV2KfoN0?list=PL3MmuxUbc_hJed7dXYoJw8DoCuVHhGEQb&t=1073).
 
+* Forward ports 6789 (Mage), 8888 (Jupyter), 4040 (pgadmin) and 8080 (spark) from VM to local machine.
+
 ## Setup environment on VM
 
 ### 1. Google Cloud SDK [comes pre-installed]

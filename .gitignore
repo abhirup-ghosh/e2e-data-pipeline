@@ -37,4 +37,3 @@ terraform.rc
 *.hcl
 
 # Ignore csv files under data/
-data/*.csv
