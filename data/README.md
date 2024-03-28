@@ -6,7 +6,7 @@ Source: https://www.kaggle.com/datasets/davidcariboo/player-scores
 
 ### 1. Direct download
 
-Download and unzip the `archive.zip` file from inside `data/` directory.
+Download and unzip the `archive.zip` file and move it's contents to `data/` directory.
 
 ### Using kaggle api
 
@@ -29,7 +29,7 @@ unzip player-scores.zip
 rm player-scores.zip
 ```
 
-## Data
+## All Data
 
 Either method generates the following raw data files:
 
@@ -44,4 +44,10 @@ data/
 ├── games.csv
 ├── player_valuations.csv
 └── players.csv
+```
+
+## Tracking large files using `git lfs`
+
+```bash
+sudo apt-get install git-lfs
 ```
