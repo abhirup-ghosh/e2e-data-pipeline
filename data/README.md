@@ -34,6 +34,7 @@ rm player-scores.zip
 Either method generates the following raw data files:
 
 ```bash
+data/
 ├── appearances.csv
 ├── club_games.csv
 ├── clubs.csv
