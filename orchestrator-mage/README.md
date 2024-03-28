@@ -31,17 +31,22 @@
 
 5. Navigate to http://localhost:6789 in your local macine browser (provided port 6789 had been already forwarded from VM to local machine using VS Code Remote-SSH)
 
-## Build New Pipeline
+## Build New Pipeline: API --> Datalake
 
 We need to build a pipeline that loads raw data from the two csv files:
 * appearances.csv
 * competitions.csv
+
 and exports them to our GCS bucket `capstone_datalake`. In order to do that, we follow these steps:
 
 1. Build new pipeline by uploading the zip file `orchestrator-mage/etl_github_gcs_raw_data.zip`
 
-2. Run@Once to load and export `appearances.csv` and `competitions.csv` to `capstone_datalake`.
+2. Run@Once to load and export `appearances.parquet` and `competitions.parquet` to `capstone_datalake/raw`.
 
-The pipeline looks like this:
+**The pipeline looks like this:**
 
 ![alt text](etl_github_gcs_raw_data.png)
+
+**Datalake looks this:**
+
+![alt text](<datalake.png>)
