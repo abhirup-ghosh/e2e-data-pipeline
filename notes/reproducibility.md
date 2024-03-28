@@ -198,8 +198,8 @@ conda env create -f res/environment.yml
 ## Setup GCP Resources using Terraform (IaC)
 
 GCP Resources:
-* Google Cloud Storage Bucket
-* Google BigQuery Dataset
+* Google Cloud Storage Bucket: `capstone_datalake`
+* Google BigQuery Dataset: `capstone_dataset`
 
 ```bash
 $~> cd terraform
