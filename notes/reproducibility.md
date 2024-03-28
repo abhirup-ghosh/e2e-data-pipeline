@@ -184,7 +184,7 @@ $~> cd e2e-data-pipeline
 ```bash
 conda create --name e2e-data-pipeline python=3.10
 conda activate e2e-data-pipeline
-conda install numpy pandas
+conda install numpy pandas scikit-learn seaborn jupyter
 ```
 
 or else build the environment using the environment file:
