@@ -20,7 +20,7 @@ def export_data_to_google_cloud_storage(df: DataFrame, **kwargs) -> None:
     config_profile = 'default'
 
     bucket_name = 'capstone_datalake'
-    object_key = 'competitions.csv'
+    object_key = 'raw/competitions.parquet'
 
     GoogleCloudStorage.with_config(ConfigFileLoader(config_path, config_profile)).export(
         df,
