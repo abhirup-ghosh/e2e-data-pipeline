@@ -74,7 +74,7 @@
     $~> ssh capstone
     ```
 
-* **Enable ssh with VS Code** by installing **Remote SSH** plugin and connecting to the remote host using the above configuration file. The instructions are [here](https://youtu.be/ae-CV2KfoN0?list=PL3MmuxUbc_hJed7dXYoJw8DoCuVHhGEQb&t=1073).
+* **Enable ssh with VS Code** by installing **Remote-SSH** plugin and connecting to the remote host using the above configuration file. The instructions are [here](https://youtu.be/ae-CV2KfoN0?list=PL3MmuxUbc_hJed7dXYoJw8DoCuVHhGEQb&t=1073).
 
 ## Setup environment on VM
 
@@ -117,6 +117,7 @@ $~> bash Anaconda3-2024.02-1-Linux-x86_64.sh
 ```
 
 This installs Anaconda under `/home/abhirup.ghosh/anaconda3` and should modify the `~/.bashrc` to change the default prompt.
+
 
 ### 3. Docker and docker-compose
 
@@ -178,6 +179,20 @@ $~> git clone git@github.com:abhirup-ghosh/e2e-data-pipeline.git
 $~> cd e2e-data-pipeline
 ```
 
+## Setup conda environment for testing
+
+```bash
+conda create --name e2e-data-pipeline python=3.10
+conda activate e2e-data-pipeline
+conda install numpy pandas
+```
+
+or else build the environment using the environment file:
+
+```bash
+conda env create -f res/environment.yml
+```
+
 ## Setup GCP Resources using Terraform (IaC)
 
 GCP Resources:
@@ -205,7 +220,7 @@ rerun this command to reinitialize your working directory. If you forget, other
 commands will detect it and remind you to do so if necessary.
 ```
 
-
+```bash
 $~/terraform> terraform apply
 .
 .
