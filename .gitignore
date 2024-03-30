@@ -36,4 +36,11 @@ terraform.rc
 # Ignore lock.hcl files
 *.hcl
 
-# Ignore csv files under data/
+# Ignore hadoop jar files
+spark/lib/gcs-connector-hadoop3-2.2.5.jar
+
+# ignore other csv files
+game_events.csv
+game_lineups.csv
+games.csv
+players.csv
