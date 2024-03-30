@@ -1,6 +1,7 @@
 # Mage: Orchestrator
 
-## Build and start Mage
+*We use **Mage** as an orchestrator to load raw data from Github (source) and export it to a GCS bucket (data lake). We do minimal processing of the raw data (set explicit data types and export as parquet files). The heavy-lifting of the processing would be done in subsequent steps with Spark and dbt.*
+## Build and start Mage on VM
 
 **These instructions have been slightly modified from those of the [main project](https://github.com/mage-ai/mage-zoomcamp) to be self-sufficient within the context of our project.**
 
