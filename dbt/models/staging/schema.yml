@@ -12,4 +12,4 @@ sources:
       - name: data_all
 
 models:
-    - name: fact_trips
+    - name: fact_football_data
