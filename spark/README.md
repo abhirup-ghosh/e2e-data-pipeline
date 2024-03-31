@@ -2,7 +2,7 @@
 
 *We use **Spark** as a tool for batch-processing of the raw data in our data lake (GCS bucket). We run spark through GCP's **Dataproc** cluster and load the processed data directly to our **Big Query data warehouse**.*
 
-## Install Spark on VM
+## Install Spark on VM [For testing]
 
 To install **Spark/pySpark**, follow the instructions here: 
 
@@ -26,7 +26,7 @@ export PYTHONPATH="${SPARK_HOME}/python/:$PYTHONPATH"
 export PYTHONPATH="${SPARK_HOME}/python/lib/py4j-0.10.9.5-src.zip:$PYTHONPATH"
 ```
 
-## Connect Spark to GCS using Hadoop
+### Connect Spark to GCS using Hadoop
 
 1. Navigate to `spark` folder in project and create a directory `spark/lib` and navigate to it.
 
@@ -44,7 +44,7 @@ gsutil cp gs://hadoop-lib/gcs/gcs-connector-hadoop3-2.2.5.jar gcs-connector-hado
 
 The location of this connector needs to be remembered and pointed to, when setting up the cluster.
 
-## Setup Dataproc Cluster in GCP
+## Setup Dataproc Cluster in GCP [for Production]
 
 Follow the instructions [here](https://youtu.be/osAiAYahvh8?list=PL3MmuxUbc_hJed7dXYoJw8DoCuVHhGEQb) to setup a Dataproc cluster on GCP. Use the following information when prompted:
 
