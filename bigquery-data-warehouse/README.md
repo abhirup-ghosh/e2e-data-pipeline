@@ -28,3 +28,9 @@ PARTITION BY DATE(date)
 CLUSTER BY player_id AS
 SELECT * FROM `e2e-data-pipeline-capstone.prod.fact_football_data`;
 ```
+
+## BigQuery Tables
+
+**Final list of external/materialised tables created on BigQuery**
+
+![alt text](<bigquery_tables_final.png>)
