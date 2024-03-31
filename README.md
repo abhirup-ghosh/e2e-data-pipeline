@@ -1,4 +1,5 @@
-# e2e-data-pipeline
+# End-to-end pipeline for Football Data
+*Capstone Project for the Data Engineering Zoomcamp, 2024 Cohort*
 
 # Pre-requisites
 
@@ -11,10 +12,14 @@ Spark (3.3.2)
 Hadoop3 (2.2.5)
 ```
 
+## Full Pipeline
+
+![alt text](workflow-e2e-data-pipeline.png)
+
 
 # Workflow
 
-![alt text](workflow-e2e-data-pipeline.png)
+
 
 * Create Resources: GCP Project + Service Accounts + VM + Bucket/Dataset using IaC
 * Load raw data (as csv) from Kaggle/Github and export to datalake/GCS bucket (as parquet) through Mage as orchestrators
