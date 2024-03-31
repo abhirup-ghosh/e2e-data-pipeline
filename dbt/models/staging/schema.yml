@@ -1,0 +1,15 @@
+version: 2
+
+sources:
+  - name: staging
+    database: e2e-data-pipeline-capstone
+     # For postgres:
+      #database: production
+    schema: capstone_dataset
+
+      # loaded_at_field: record_loaded_at
+    tables:
+      - name: data_all
+
+models:
+    - name: fact_trips
