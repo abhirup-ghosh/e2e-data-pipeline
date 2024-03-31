@@ -14,10 +14,11 @@ Hadoop3 (2.2.5)
 
 # Workflow
 
+![alt text](workflow-e2e-data-pipeline.png)
+
 * Create Resources: GCP Project + Service Accounts + VM + Bucket/Dataset using IaC
 * Load raw data (as csv) from Kaggle/Github and export to datalake/GCS bucket (as parquet) through Mage as orchestrators
 * Process data using spark/python and store in data warehouse/BigQuery
 * Perform data transformation inside BigQuery data warehouse using dbt cloud
 * Cluster/partition data in data warehouse
 * Visualise data using Looker
-
