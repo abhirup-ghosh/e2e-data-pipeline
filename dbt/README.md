@@ -19,5 +19,9 @@
 1. Create dbt model using [schema.yml](./models/staging/schema.yml) and [fact_football.sql](./models/staging/fact_football_data.sql)
 2. Filter the data to first-tier domestic leagues in Germany, Spain, England, France and Italy.
 3. `dbt build` to create the table: `e2e-data-pipeline-capstone.capstone_datalake.dbt_aghosh.fact_football` inside BigQuery data warehouse.
+4. Deploy a Nightly production that creates the table `prod`
+
+A successful deployment of **Nightly**.
+![alt text](<nightly_deployment.png>)
 
 🚨 Region error: dbt Developer account only allows the creation of resources in the US region. All of our other resources, including the raw data table in BigQuery are in the europe-north1 region. Hence, we create a replica of `e2e-data-pipeline-capstone.capstone_datalake.data_all` in the US region and make it primary. Only in this combination, would we be able to read from this table and write to `e2e-data-pipeline-capstone.capstone_datalake.dbt_aghosh`.
