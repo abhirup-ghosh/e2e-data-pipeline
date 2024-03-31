@@ -2,6 +2,8 @@
 
 *We use dbt cloud to transform the data inside the Big Query data warehouse. The transformation involves restricting the data to first-tier domestic leagues of the top 5 European leagues -- Germany, Spain, England, France and Italy.*
 
+Pre-requisites: [Orchestrate raw data into GCS bucket using Mage](../mage-orchestrator/README.md).
+
 ## Setup dbt project
 
 1. Setup dbt developer account at https://cloud.getdbt.com/

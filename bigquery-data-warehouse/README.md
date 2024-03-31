@@ -1,6 +1,6 @@
-# Dat
+# BigQuery: Data warehouse
 
-# Looker
+# Looker: Data visualisation
 
 https://lookerstudio.google.com/
 Data sources
