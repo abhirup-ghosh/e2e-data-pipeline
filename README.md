@@ -43,6 +43,8 @@ The key objectives for our project are:
 
 # [DATA PIPELINE](#data-pipeline)
 
+[⚠️ This Google Project has now been deactivated]
+
 For achieving the objectives listed above, we build an end-to-end data pipeline, starting from the raw Transfermarkt data on Kaggle, and ending with a Looker dashboard that seeks to shed some insights.
 
 ## [Tools/ Resources Used](#tools-resources-used)
